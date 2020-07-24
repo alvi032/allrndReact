@@ -1,0 +1,36 @@
+@font-face {
+    font-family: Gilroy;
+    font-style: normal;
+    font-weight: 300;
+    src: url("Gilroy-Light.ttf");
+}
+@font-face {
+    font-family: Gilroy;
+    font-style: normal;
+    font-weight: 500;
+    src: url("Gilroy-Medium.ttf");
+}
+@font-face {
+    font-family: Gilroy;
+    font-style: normal;
+    font-weight: 700;
+    src: url("Gilroy-Bold.ttf");
+}
+@font-face {
+    font-family: Gilroy;
+    font-style: normal;
+    font-weight: 800;
+    src: url("Gilroy-ExtraBold.ttf");
+}
+.light {
+    font-weight: 300;
+}
+.medium {
+    font-weight: 500;
+}
+.bold {
+    font-weight: 700;
+}
+.extraBold {
+    font-weight: 800;
+}
