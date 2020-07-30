@@ -1,0 +1,46 @@
+@import '../Base/all';
+@import '../Utils/all';
+
+.footer {
+  background-color: $dark-color;
+  color: $light-color;
+
+  .container {
+    margin: 0 10%;
+  }
+
+  .footer-content {
+    padding: 100em 0 24em;
+
+    ul {
+      display: flex;
+      max-width: 684em;
+      width: 100%;
+      justify-content: space-between;
+      margin-bottom: 2em;
+
+      a {
+        color: $light-color;
+        font-weight: 500;
+        font-size: 22em;
+      }
+    }
+
+    .contact-info {
+      display: flex;
+      max-width: 38em;
+      justify-content: space-between;
+      margin: 2.5em 0;
+      font-size: 18em;
+
+      .light {
+        color: #a9a9a9;
+      }
+    }
+
+    .copyrights{
+      font-size: 14em;
+      color: #a9a9a9;
+    }
+  }
+}

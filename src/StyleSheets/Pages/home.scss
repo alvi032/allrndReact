@@ -1,0 +1,216 @@
+@import '../Utils/utilities';
+@import '../Base/base';
+
+.home {
+  .getStarted {
+    padding: 90em 0;
+    width: 100%;
+    background-image: url("../../Images/backgrounds/background.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: $primary-color;
+
+    .main {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 180em 15% 30em;
+      //max-width: 1050px;
+      margin: auto auto 2em;
+
+      @media (min-width: 1920px) {
+        padding: 140em 15% 0;
+      }
+    }
+
+    .extraBold {
+      font-size: 52em;
+      line-height: 0.875em;
+    }
+
+    .bold {
+      font-size: 18em;
+      margin-top: 1.25em;
+      margin-bottom: 2em;
+    }
+
+    .button {
+      @extend %button;
+      border-color: $primary-color;
+      background-color: transparent;
+      color: $primary-color;
+    }
+
+    .playButton {
+      padding: 0 5%;
+
+      img {
+        width: 90px;
+      }
+    }
+
+    .social {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 1.625em;
+      padding: 0 20em;
+
+      img {
+        width: 16em;
+        margin: 8em 0;
+      }
+
+      p {
+        transform: rotate(270deg);
+        margin-top: 5em;
+        font-weight: 500;
+        white-space: nowrap;
+        font-size: 16em;
+      }
+    }
+  }
+
+  .home-about {
+    background-color: $dark-color;
+    color: $light-color;
+    position: relative;
+
+    .case {
+      padding: 48em;
+    }
+
+    .home-about-container {
+      display: flex;
+    }
+
+    .home-about-tag {
+      align-self: center;
+      display: flex;
+      flex-direction: column;
+      position: absolute;
+      left: -64em;
+
+      div {
+        width: 2px;
+        height: 180em;
+        background-color: #484C52;
+        margin: auto;
+      }
+
+      p {
+        white-space: nowrap;
+        transform: rotate(270deg);
+        color: #484C52;
+        font-size: 32em;
+        font-weight: 300;
+        margin: 100px 0;
+        transform-origin: center center;
+
+        @media(min-width: 1920px){
+          margin: 160px 0;
+        }
+      }
+    }
+
+    .home-about-content {
+      display: flex;
+      flex-direction: column;
+      max-width: 900px;
+      width: 100%;
+      margin-right: auto;
+      padding-left: 112em;
+      padding-bottom: 80em;
+
+      .heading {
+        font-size: 40em;
+        margin: 1.5em 0 1em;
+      }
+
+      .description {
+        font-size: 28em;
+        margin-bottom: 2.25em;
+      }
+
+      .services {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+
+        div{
+          padding-right: 80em;
+        }
+
+        .service-heading {
+          font-size: 24em;
+          font-weight: 300;
+          margin-bottom: 0.875em;
+          white-space: nowrap;
+        }
+
+        .service-desc {
+          font-size: 18em;
+          line-height: 1.5em;
+          white-space: nowrap;
+        }
+      }
+    }
+
+    img {
+      //width: 25em;
+      width: 100%;
+      padding-left: 2em;
+    }
+
+  }
+
+  .clients {
+    color: $primary-color;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40em 0;
+
+    p {
+      font-size: 32em;
+      margin-bottom: 1em;
+    }
+
+    .clients-logo {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-column-gap: 120em;
+      grid-row-gap: 30em;
+      margin-bottom:50em;
+    }
+
+    .button {
+      @extend %button;
+      background-color: $light-color;
+      border-color: $primary-color;
+      color: $primary-color;
+    }
+  }
+
+  .upper-footer {
+    background-color: $dark-color;
+    color: $light-color;
+    padding-top: 80em;
+
+    .container {
+      margin: 0 10%;
+
+      .footer-heading {
+        font-size: 48em;
+        margin-bottom: 0.75em;
+      }
+
+      .button {
+        @extend %button;
+        background-color: $dark-color;
+        color: $light-color;
+        border-color: $light-color;
+      }
+    }
+  }
+}

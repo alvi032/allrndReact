@@ -16,11 +16,7 @@ function Clients(props) {
                 <img src={logo} alt="brand"/>
                 <img src={logo} alt="brand"/>
             </div>
-            <button
-                className={'button1'}
-                style={{border: '3px solid var(--ablue)', color: 'var(--ablue)'}}>
-                OUR WORK
-            </button>
+            <button className={'button'}>OUR WORK</button>
         </div>
     );
 }

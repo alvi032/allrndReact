@@ -1,0 +1,84 @@
+@import '../Utils/utilities';
+@import '../Base/base';
+
+.contact {
+
+  .header {
+    img {
+      filter: saturate(0) brightness(2);
+    }
+    .hamburgerIcon div {
+      background: #ffffff;
+    }
+  }
+
+  .form {
+    padding-top: 90em;
+    background: $dark-color;
+    color: $light-color;
+
+    .content {
+      max-width: 800em;
+      margin: auto;
+      padding-top: 40em;
+
+      .backButton {
+        font-size: 18em;
+        color: $grey-color
+      }
+
+      p {
+        font-size: 36em;
+        line-height: 1em;
+        margin-top: 1em;
+      }
+
+      form {
+        margin-top: 40em;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+
+
+        div{
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+          justify-content: space-between;
+          column-gap: 80em;
+          width: 100%;
+        }
+
+        input {
+          margin: 1.5em 0;
+          width: 100%;
+          padding: 1.5em 0;
+          background: transparent;
+          border-bottom: 1px solid darkgrey;
+          border-top: none;
+          border-left: none;
+          border-right: none;
+          border-radius: 0;
+          outline: none;
+
+          @media (min-width: 1920px) {
+            margin: 2em 0;
+          }
+        }
+        ::placeholder {
+          color: darkgrey;
+          font-family: Gilroy, sans-serif;
+          font-weight: 500;
+          font-size: 2em;
+          overflow: visible;
+        }
+
+        .button {
+          @extend %button;
+          margin-top: 2em;
+          color: $light-color;
+          border-color: $light-color;
+        }
+      }
+    }
+  }
+}

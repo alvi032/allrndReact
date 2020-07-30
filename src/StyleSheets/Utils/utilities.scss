@@ -1,0 +1,37 @@
+.container {
+  margin: 0 4%;
+}
+
+.case {
+  margin: auto;
+  position: relative;
+}
+
+%button {
+  padding: 0.625em 1.5em;
+  border-radius: 30px;
+  border-width: 2px;
+  border-style: solid;
+  background-color: transparent;
+  font-size: 16em;
+  font-weight: 500;
+  font-family: Gilroy, sans-serif;
+  letter-spacing: 0.25em;
+}
+
+.dark-image {
+  filter: saturate(0) brightness(2);
+}
+
+@media (min-width: 1366px) and (max-width: 1900px) {
+  .case {
+    max-width: 1366px;
+  }
+}
+
+@media (min-width: 1920px) and (max-width: 2560px) {
+  .case {
+    max-width: 1920px;
+  }
+}
+

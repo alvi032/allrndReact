@@ -1,0 +1,38 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+$primary-color: #3484D9;
+$dark-color: #080E16;
+$light-color: #ffffff;
+$grey-color: #484C52;
+
+:root {
+  --primary-color: #3484D9;
+  --dark-color: #080E16;
+  --light-color: #ffffff;
+  --grey-color: #484C52;
+}
+
+$base-font-size: 1px;
+
+body {
+  font-family: Gilroy, sans-serif;
+  font-size: $base-font-size;
+
+  @media (min-width: 1920px){
+    font-size: $base-font-size*1.4;
+  }
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+

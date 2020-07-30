@@ -1,0 +1,123 @@
+@import '../Utils/utilities';
+@import '../Base/base';
+
+.about {
+
+  .header {
+    img {
+      filter: saturate(0) brightness(2);
+    }
+    .hamburgerIcon div {
+      background: #ffffff;
+    }
+  }
+
+  .about-intro {
+    padding-top: 90em;
+    padding-bottom: 200em;
+    background-color: $dark-color;
+
+    .content {
+      max-width: 1000em;
+      margin: auto;
+    }
+
+    p{
+      color: $light-color;
+    }
+
+    .intro-heading {
+      font-size: 54em;
+      margin-top: 2em;
+      line-height: 1em;
+    }
+
+    .intro-desc {
+      font-size: 18em;
+      margin-top: 2em;
+    }
+
+    .intro-video {
+      display: flex;
+      align-items: center;
+      margin-top: 64em;
+
+      img {
+        height: 100em;
+      }
+
+      p {
+        font-size: 20em;
+        margin-left: 1em;
+      }
+    }
+  }
+
+  .services {
+    position: relative;
+    height: 1275em;
+
+    .content {
+      max-width: 1050em;
+      margin: auto;
+      position: absolute;
+      top: -100em;
+      left: 0;
+      right: 0;
+      padding-bottom: 20em;
+    }
+
+    .service-type {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      &>div {
+        max-width: 550em;
+      }
+
+      img {
+        height: 450em;
+      }
+
+      .service-heading {
+        font-size: 32em;
+        color: $primary-color;
+        margin-bottom: 0.25em;
+      }
+
+      .service-desc {
+        font-size: 22em;
+      }
+    }
+
+    .service-type + .reverse {
+      flex-direction: row-reverse;
+    }
+  }
+
+  .showcase {
+    background-color: $dark-color;
+    color: $light-color;
+    padding-top: 60em;
+    .content{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+    }
+    .heading {
+      font-size: 36em;
+      text-align: center;
+      margin-bottom: 1.5em;
+    }
+
+    .imageText {
+      font-size: 36em;
+      text-align: center;
+      padding: 3em 5em;
+      background: $primary-color;
+      margin-top: 2em;
+    }
+  }
+}
