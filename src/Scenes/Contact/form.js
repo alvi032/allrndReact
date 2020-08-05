@@ -38,6 +38,7 @@ function Form(props) {
                             type="text"
                             name={'message'}
                             placeholder={'Message'}
+                            className={'message-input'}
                         />
                         <a href="contact" className={'button'}>SUBMIT</a>
                     </form>

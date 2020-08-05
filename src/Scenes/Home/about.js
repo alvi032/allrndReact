@@ -1,5 +1,4 @@
 import React from 'react';
-import design from "../../Images/design.png";
 
 function About(props) {
     return (
@@ -7,9 +6,9 @@ function About(props) {
             <div className={'case'}>
                 <div className={'home-about-container'}>
                     <div className={'home-about-tag'}>
-                        <div></div>
+                        <div> </div>
                         <p> WHO & WHAT </p>
-                        <div></div>
+                        <div> </div>
                     </div>
                     <div className={'home-about-content'}>
                         <p className={'bold heading'}>
@@ -65,9 +64,7 @@ function About(props) {
                             </div>
                         </div>
                     </div>
-                    <div className={'about-img'}>
-                        {/*<img src={design} alt="allrnd"/>*/}
-                    </div>
+                    <div className={'about-img'}> </div>
                 </div>
             </div>
         </div>

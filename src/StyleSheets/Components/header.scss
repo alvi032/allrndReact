@@ -1,3 +1,5 @@
+@import '../Base/all';
+
 .header {
     .container {
         display: flex;
@@ -43,7 +45,6 @@
     right: 0;
     background-color: $light-color;
     transition: left 350ms ease-out;
-    //opacity: 80%;
 
     .content {
         height: 100vh;
@@ -57,11 +58,18 @@
             background-image: url('../../Images/design.png');
             background-size: cover;
             background-repeat: no-repeat;
+            @media #{$mq-mobile} {
+                display: none;
+            }
         }
         .links {
             height: max-content;
             margin-left: 100em;
             align-self: center;
+
+            @media #{$mq-mobile} {
+                margin-left: 50em;
+            }
 
                 a {
                     font-size: 56em;

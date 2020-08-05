@@ -12,6 +12,7 @@ function Showcase(props) {
                         showcase video
                     </p>
                     <ReactPlayer
+                        className={'showcase-video'}
                         url={'https://www.youtube.com/watch?v=_Hp_dI0DzY4&t=886s'}
                     />
                     <p className={'imageText bold'}>

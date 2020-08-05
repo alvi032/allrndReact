@@ -41,7 +41,7 @@ function Header(props) {
             </div>
             <div className={'menu'} style={menuOpen}>
                 <div className={'content'}>
-                    <div className={'sidebar-img'}></div>
+                    <div className={'sidebar-img'}> </div>
                     <div className={'links'}>
                         <ul>
                             <li><a href="about">ABOUT</a></li>

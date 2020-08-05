@@ -19,6 +19,11 @@
       justify-content: space-between;
       margin-bottom: 2em;
 
+      @media #{$mq-mobile} {
+        flex-direction: column;
+        row-gap: 20em;
+      }
+
       a {
         color: $light-color;
         font-weight: 500;
@@ -32,6 +37,11 @@
       justify-content: space-between;
       margin: 2.5em 0;
       font-size: 18em;
+
+      @media #{$mq-mobile} {
+        flex-direction: column;
+        row-gap: 1em;
+      }
 
       .light {
         color: #a9a9a9;

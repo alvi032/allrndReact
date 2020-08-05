@@ -17,9 +17,14 @@
     padding-bottom: 200em;
     background-color: $dark-color;
 
+    @media #{$mq-tab} {
+      padding-bottom: 80em;
+    }
+
     .content {
-      max-width: 1000em;
+      max-width: 960em;
       margin: auto;
+      padding-left: 40em;
     }
 
     p{
@@ -57,6 +62,10 @@
     position: relative;
     height: 1275em;
 
+    @media #{$mq-tab} {
+      height: unset;
+    }
+
     .content {
       max-width: 1050em;
       margin: auto;
@@ -65,12 +74,28 @@
       left: 0;
       right: 0;
       padding-bottom: 20em;
+
+      @media #{$mq-tab} {
+        position: relative;
+        top: 0;
+        margin-top: 40em;
+      }
     }
 
     .service-type {
       display: flex;
       align-items: center;
       justify-content: space-between;
+      column-gap: 20em;
+
+      @media #{$mq-tab} {
+        justify-content: space-around;
+        margin: 0 4% 50em;
+      }
+
+      @media #{$mq-mobile} {
+        flex-direction: column;
+      }
 
       &>div {
         max-width: 550em;
@@ -78,6 +103,13 @@
 
       img {
         height: 450em;
+
+        @media #{$mq-tab} {
+          height: 200em;
+        }
+        @media #{$mq-mobile} {
+          margin-bottom: 20em;
+        }
       }
 
       .service-heading {
@@ -93,6 +125,14 @@
 
     .service-type + .reverse {
       flex-direction: row-reverse;
+
+      @media #{$mq-tab} {
+        justify-content: space-around;
+      }
+
+      @media #{$mq-mobile} {
+        flex-direction: column;
+      }
     }
   }
 
@@ -110,6 +150,14 @@
       font-size: 36em;
       text-align: center;
       margin-bottom: 1.5em;
+    }
+
+    .showcase-video {
+      //any css
+      @media #{$mq-mobile} {
+        width: 300em !important;
+        height: 168.75em !important;
+      }
     }
 
     .imageText {

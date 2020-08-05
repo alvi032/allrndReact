@@ -47,6 +47,10 @@
       img {
         width: 90px;
       }
+
+      @media #{$mq-tab} {
+        display: none;
+      }
     }
 
     .social {
@@ -91,6 +95,10 @@
       position: absolute;
       left: -64em;
 
+      @media #{$mq-mobile} {
+        display: none;
+      }
+
       div {
         width: 2px;
         height: 180em;
@@ -116,11 +124,15 @@
     .home-about-content {
       display: flex;
       flex-direction: column;
-      max-width: 900px;
+      max-width: 900em;
       width: 100%;
       margin-right: auto;
       padding-left: 112em;
       padding-bottom: 80em;
+
+      @media #{$mq-mobile} {
+        padding-left: 20em;
+      }
 
       .heading {
         font-size: 40em;
@@ -137,8 +149,16 @@
         justify-content: space-between;
         width: 100%;
 
+        @media #{$mq-tab} {
+          flex-direction: column;
+        }
+
         div{
           padding-right: 80em;
+
+          @media #{$mq-tab} {
+            margin-bottom: 30em;
+          }
         }
 
         .service-heading {
@@ -146,6 +166,9 @@
           font-weight: 300;
           margin-bottom: 0.875em;
           white-space: nowrap;
+          @media #{$mq-tab} {
+            margin-bottom: 0.5em;
+          }
         }
 
         .service-desc {
@@ -153,6 +176,13 @@
           line-height: 1.5em;
           white-space: nowrap;
         }
+      }
+
+      .service-about-img {
+        background: url("../../Images/design.png") no-repeat;
+        background-size: cover;
+        width: 100%;
+        max-width: 300em;
       }
     }
 
@@ -166,6 +196,10 @@
       background-image: url("../../Images/design.png");
       width: 100%;
       background-repeat: no-repeat;
+
+      @media #{$mq-tab} {
+        display: none;
+      }
     }
 
   }
@@ -180,6 +214,8 @@
     p {
       font-size: 32em;
       margin-bottom: 1em;
+      text-align: center;
+      padding: 0 1em;
     }
 
     .clients-logo {
@@ -188,6 +224,19 @@
       grid-column-gap: 120em;
       grid-row-gap: 30em;
       margin-bottom:50em;
+      width: 100%;
+
+
+      @media #{$mq-tab} {
+        grid-column-gap: 60em;
+      }
+      @media #{$mq-mobile} {
+        grid-column-gap: unset;
+        img {
+          width: 80em;
+          margin: auto;
+        }
+      }
     }
 
     .button {

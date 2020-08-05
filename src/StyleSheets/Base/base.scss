@@ -18,10 +18,14 @@ $grey-color: #484C52;
 
 $base-font-size: 1px;
 
+html, body {
+  overflow-x: hidden;
+}
+
 body {
   font-family: Gilroy, sans-serif;
   font-size: $base-font-size;
-
+overflow-x: hidden;
   @media (min-width: 1920px){
     font-size: $base-font-size*1.4;
   }
@@ -36,3 +40,5 @@ ul {
   padding-left: 0;
 }
 
+$mq-mobile: "(min-width: 0) and (max-width: 767px)";
+$mq-tab: "(min-width: 0) and (max-width: 1000px)";

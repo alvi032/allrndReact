@@ -22,6 +22,12 @@
       margin: auto;
       padding-top: 40em;
 
+      @media #{$mq-tab} {
+        margin: 50em 4% 0;
+        padding: 0 50em;
+
+      }
+
       .backButton {
         font-size: 18em;
         color: $grey-color
@@ -46,6 +52,13 @@
           justify-content: space-between;
           column-gap: 80em;
           width: 100%;
+
+          @media #{$mq-tab} {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            max-width: 450em;
+          }
         }
 
         input {
@@ -63,6 +76,11 @@
           @media (min-width: 1920px) {
             margin: 2em 0;
           }
+
+          @media #{$mq-mobile} {
+            margin-bottom: 0.5em;
+            padding-bottom: 1em;
+          }
         }
         ::placeholder {
           color: darkgrey;
@@ -70,6 +88,18 @@
           font-weight: 500;
           font-size: 2em;
           overflow: visible;
+
+          @media #{$mq-mobile} {
+            font-size: 1.5em;
+          }
+        }
+
+        .message-input {
+          padding-bottom: 5em;
+
+          @media #{$mq-mobile} {
+            padding-bottom: 3.5em;
+          }
         }
 
         .button {
