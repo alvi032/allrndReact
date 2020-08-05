@@ -66,7 +66,7 @@ function About(props) {
                         </div>
                     </div>
                     <div className={'about-img'}>
-                        <img src={design} alt="allrnd"/>
+                        {/*<img src={design} alt="allrnd"/>*/}
                     </div>
                 </div>
             </div>

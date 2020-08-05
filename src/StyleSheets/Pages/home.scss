@@ -3,7 +3,7 @@
 
 .home {
   .getStarted {
-    padding: 90em 0;
+    padding: 90em 0 115em;
     width: 100%;
     background-image: url("../../Images/backgrounds/background.png");
     background-size: cover;
@@ -160,6 +160,12 @@
       //width: 25em;
       width: 100%;
       padding-left: 2em;
+    }
+
+    .about-img {
+      background-image: url("../../Images/design.png");
+      width: 100%;
+      background-repeat: no-repeat;
     }
 
   }
