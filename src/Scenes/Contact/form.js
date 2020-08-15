@@ -1,6 +1,36 @@
-import React from 'react';
+import React, {useState} from 'react';
 
-function Form(props) {
+function Form() {
+
+    const [message, setMessage] = useState({
+        name:'',
+        number:'',
+        email: '',
+        subject:'',
+        message:''
+    })
+
+    const changeHandler = (e) => {
+        e.preventDefault();
+
+        let nam = e.target.name;
+        let val = e.target.value;
+        // console.log(nam)
+        // console.log(val)
+
+            setMessage({
+                ...message,
+                [nam]:val
+            })
+        console.log(message)
+    }
+
+    const onSubmit = (e) => {
+        e.preventDefault();
+
+        console.log(message)
+    }
+
     return (
         <div className={'form'}>
             <div className={'case'}>
@@ -14,24 +44,28 @@ function Form(props) {
                     <form>
                         <div>
                             <input
-                            type="text"
-                            name={'name'}
-                            placeholder={'Name'}
+                                type="text"
+                                name={'name'}
+                                placeholder={'Name'}
+                                onChange={changeHandler}
                             />
                             <input
                                 type="text"
                                 name={'email'}
                                 placeholder={'Email'}
+                                onChange={changeHandler}
                             />
                             <input
                             type="text"
                             name={'number'}
                             placeholder={'Number'}
+                            onChange={changeHandler}
                             />
                             <input
                                 type="text"
-                                name={'project'}
-                                placeholder={'Project Field'}
+                                name={'subject'}
+                                placeholder={'Subject'}
+                                onChange={changeHandler}
                             />
                         </div>
                         <input
@@ -39,8 +73,9 @@ function Form(props) {
                             name={'message'}
                             placeholder={'Message'}
                             className={'message-input'}
+                            onChange={changeHandler}
                         />
-                        <a href="contact" className={'button'}>SUBMIT</a>
+                        <button className={'button'} onClick={onSubmit}>SUBMIT</button>
                     </form>
                 </div>
             </div>

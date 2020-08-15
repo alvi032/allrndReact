@@ -226,6 +226,9 @@
       margin-bottom:50em;
       width: 100%;
 
+      img {
+        margin: auto;
+      }
 
       @media #{$mq-tab} {
         grid-column-gap: 60em;
@@ -234,7 +237,6 @@
         grid-column-gap: unset;
         img {
           width: 80em;
-          margin: auto;
         }
       }
     }

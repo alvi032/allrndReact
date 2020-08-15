@@ -62,9 +62,9 @@
         }
 
         input {
-          margin: 1.5em 0;
+          margin: 0.5em 0;
           width: 100%;
-          padding: 1.5em 0;
+          padding: 0.5em 0;
           background: transparent;
           border-bottom: 1px solid darkgrey;
           border-top: none;
@@ -72,9 +72,13 @@
           border-right: none;
           border-radius: 0;
           outline: none;
+          font-size: 24em;
+          color: #f3f3f3;
+          font-family: Gilroy, sans-serif;
+          font-weight: 700;
 
           @media (min-width: 1920px) {
-            margin: 2em 0;
+            margin: 1em 0;
           }
 
           @media #{$mq-mobile} {
@@ -86,7 +90,7 @@
           color: darkgrey;
           font-family: Gilroy, sans-serif;
           font-weight: 500;
-          font-size: 2em;
+          font-size: 1em;
           overflow: visible;
 
           @media #{$mq-mobile} {
@@ -95,10 +99,10 @@
         }
 
         .message-input {
-          padding-bottom: 5em;
+          padding-bottom: 3em;
 
           @media #{$mq-mobile} {
-            padding-bottom: 3.5em;
+            padding-bottom: 2em;
           }
         }
 
